@@ -162,7 +162,7 @@ def DoubanBan():
 def run_cmd(cmd,l):
         p = Popen(cmd % l, shell=True, stdout=PIPE)
         output = p.communicate()[0]
-	output = output[0:len(output)-1]
+        output = output[0:len(output)-1]
         return output
 
 def DoubanInfo():
